@@ -18,7 +18,7 @@ WORKDIR /app
 
 ADD --chmod=0755 ${BUILDREPO} ./postal
 
-EXPOSE 8081
+EXPOSE 8080
 
 ENTRYPOINT ["/app/postal"]
 
