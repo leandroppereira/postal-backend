@@ -22,4 +22,5 @@ EXPOSE 8081
 
 ENTRYPOINT ["/app/postal"]
 
-CMD ["-port=8081"]
+#CMD ["-port=8081"]
+CMD ["--server"]
