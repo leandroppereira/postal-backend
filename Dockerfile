@@ -16,10 +16,10 @@ ARG BUILDREPO=http://www.example.com/downloads/postal-1.0
 
 WORKDIR /app
 
-ADD --chmod=0755 ${BUILDREPO} /postal
+ADD --chmod=0755 ${BUILDREPO} ./postal
 
-EXPOSE 8080
+EXPOSE 8081
 
 ENTRYPOINT ["/app/postal"]
 
-CMD ["--server"]
+CMD ["-p=8081"]
